@@ -1,0 +1,17 @@
+server:
+  port: 9871
+
+spring:
+  application:
+    name: springboot2-mybatisplus
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.example.springboot2mybatisplus.entity
+  configuration:
+    # 驼峰命名规范 如：数据库字段是  order_id 那么 实体字段就要写成 orderId
+    map-underscore-to-camel-case: true
