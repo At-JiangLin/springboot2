@@ -1,19 +1,23 @@
-package com.example.springboot2mybatisplus.Service.impl;
+package com.example.springboot2log4j2.service.impl;
 
-import com.example.springboot2mybatisplus.Service.UserService;
-import com.example.springboot2mybatisplus.dao.UserMapper;
-import com.example.springboot2mybatisplus.entity.User;
+import com.example.springboot2log4j2.dao.UserMapper;
+import com.example.springboot2log4j2.entity.User;
+import com.example.springboot2log4j2.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * @Auther: ljl
- * @Date: 2018/12/5 14:37
+ * @Date: 2018/12/6 10:34
  * @Description:
  */
 
 @Service
 public class UserServiceImpl implements UserService {
+
+    private static final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
     private UserMapper userMapper;

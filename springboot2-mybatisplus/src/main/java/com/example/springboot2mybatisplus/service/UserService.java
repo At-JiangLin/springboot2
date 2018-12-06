@@ -1,4 +1,4 @@
-package com.example.springboot2mybatisplus.Service;
+package com.example.springboot2mybatisplus.service;
 
 import com.example.springboot2mybatisplus.entity.User;
 
