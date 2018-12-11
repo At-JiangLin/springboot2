@@ -1,0 +1,5 @@
+server:
+  port: 9875
+spring:
+  application:
+    name: springboot2-docker
